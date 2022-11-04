@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 
 import banner from "./assets/banner.png";
 import articleImg2 from "./assets/img_1.png";
@@ -15,7 +15,7 @@ function App() {
         <img src={banner} className="image" />
       </div>
       <div className="article">
-        <div>
+        <div className="image-wrapper">
           <img src={articleImg1} className="image" />
         </div>
         <div>
@@ -56,7 +56,7 @@ function App() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div>
+        <div className="image-wrapper">
           <img src={articleImg2} className="image" />
         </div>
       </div>
