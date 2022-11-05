@@ -14,11 +14,11 @@ function App() {
       <div id="banner">
         <img src={banner} className="image" />
       </div>
-      <div className="article">
+      <div className="article article-1">
         <div className="image-wrapper">
           <img src={articleImg1} className="image" />
         </div>
-        <div>
+        <div className="content-wrapper">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -32,8 +32,8 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="article">
-        <div>
+      <div className="article article-2">
+        <div className="content-wrapper">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -60,7 +60,25 @@ function App() {
           <img src={articleImg2} className="image" />
         </div>
       </div>
-      <div id="horizontal"></div>
+
+      <div id="horizontal">
+        <div className="image-wrapper">
+          <img src={img1} className="image image-1" alt="" />
+        </div>
+        <div className="image-wrapper">
+          <img src={img2} className="image image-2" alt="" />
+        </div>
+        <div className="image-wrapper">
+          <img src={img3} className="image image-3" alt="" />
+        </div>
+        <div className="image-wrapper">
+          <img src={img4} className="image image-4" alt="" />
+        </div>
+        <div className="image-wrapper">
+          <img src={img1} className="image image-1" alt="" />
+        </div>
+      </div>
+
       <div id="newsletter"></div>
     </div>
   );

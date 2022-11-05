@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#banner {
+  .image {
+    width: 100%;
+    height: 700px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.article {
+  padding: 2rem 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+
+  .image-wrapper {
+    .image {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content-wrapper {
+    max-width: 50vw;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+  }
+
+  // tanda & digunakan jk dlm 1 className trdpt 2 class & ingin dipisahkan
+  &.article-1 {
+    padding-bottom: 0;
+    .image-wrapper {
+      max-width: 50vw;
+      .image {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+
+  &.article-2 {
+    .image-wrapper {
+      max-width: 50vw;
+      .image {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    .content-wrapper {
+      padding-right: 2rem;
+    }
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#horizontal {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 2rem;
 }
