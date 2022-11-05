@@ -9,57 +9,79 @@ import img3 from "./assets/img_6.jpg";
 import img4 from "./assets/img_7.jpg";
 
 function App() {
+  const showArticle = true;
+
+  const greeting = () => {
+    alert("email submitted!");
+  };
+
   return (
     <div className="App">
       <div id="banner">
         <img src={banner} className="image" />
       </div>
-      <div className="article article-1">
-        <div className="image-wrapper">
-          <img src={articleImg1} className="image" />
+
+      {showArticle ? (
+        <div className="article article-1">
+          <div className="image-wrapper">
+            <img src={articleImg1} className="image" />
+          </div>
+          <div className="content-wrapper">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
         </div>
-        <div className="content-wrapper">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
+      ) : (
+        <></>
+      )}
+
+      {showArticle ? (
+        <div className="article article-2">
+          <div className="image-wrapper-mobile">
+            <img src={articleImg2} className="image" />
+          </div>
+          <div className="content-wrapper">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+          <div className="image-wrapper">
+            <img src={articleImg2} className="image" />
+          </div>
         </div>
-      </div>
-      <div className="article article-2">
-        <div className="content-wrapper">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-            <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div>
-        <div className="image-wrapper">
-          <img src={articleImg2} className="image" />
-        </div>
-      </div>
+      ) : (
+        <></>
+      )}
 
       <div id="horizontal">
         <div className="image-wrapper">
@@ -85,7 +107,7 @@ function App() {
         </div>
         <div className="forms-wrapper">
           <input placeholder="Email" />
-          <button>SUBMIT</button>
+          <button onClick={greeting}>SUBMIT</button>
         </div>
       </div>
     </div>
