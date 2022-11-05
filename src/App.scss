@@ -1,5 +1,19 @@
+@font-face {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+}
+
+$graywhite: #f2f2f2;
+$darkgreen: #425e25;
+$white: #fff;
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #banner {
   .image {
+    object-fit: cover;
     width: 100%;
     height: 700px;
   }
@@ -52,7 +66,47 @@
 }
 
 #horizontal {
+  background-color: $graywhite;
+  overflow-y: scroll;
   display: flex;
-  background-color: #f2f2f2;
   padding: 2rem;
+  max-width: 100vw;
+
+  .image-wrapper {
+    height: 225px;
+    margin-right: 2rem;
+
+    .image {
+      height: 100%;
+    }
+  }
+}
+
+#newsletter {
+  display: flex;
+  padding: 1rem;
+
+  .title-wrapper {
+    width: 50vw;
+  }
+
+  .forms-wrapper {
+    width: 50vw;
+    display: flex;
+
+    input {
+      width: 100%;
+      padding: 1rem;
+      background: $graywhite;
+      border: none;
+    }
+    button {
+      padding: 1rem 2rem;
+      background: $darkgreen;
+      color: $white;
+      border: none;
+      margin-left: 2rem;
+      font-weight: 700;
+    }
+  }
 }

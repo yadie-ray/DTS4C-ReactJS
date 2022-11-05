@@ -79,7 +79,15 @@ function App() {
         </div>
       </div>
 
-      <div id="newsletter"></div>
+      <div id="newsletter">
+        <div className="title-wrapper">
+          <h3>NEWSLETTER</h3>
+        </div>
+        <div className="forms-wrapper">
+          <input placeholder="Email" />
+          <button>SUBMIT</button>
+        </div>
+      </div>
     </div>
   );
 }
