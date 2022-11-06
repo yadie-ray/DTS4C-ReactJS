@@ -8,7 +8,7 @@ import img2 from "./assets/img_5.jpg";
 import img3 from "./assets/img_6.jpg";
 import img4 from "./assets/img_7.jpg";
 
-function App() {
+const App = () => {
   const showArticle = true;
 
   const greeting = () => {
@@ -112,6 +112,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
