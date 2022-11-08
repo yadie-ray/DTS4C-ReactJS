@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react"; // sudah tidak harus menggunakan import react
 
 const Article2 = (props) => {
   return (
