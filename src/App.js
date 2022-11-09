@@ -26,7 +26,7 @@ const App = () => {
       <Banner img={banner} />
       {/* {showArticle ? <Article1 img={articleImg1} /> : <></>}
       {showArticle ? <Article2 img={articleImg2} /> : <></>} */}
-      {/* =========== atau menggunakan dibawah jika tidak ada opsi pd ternary =========== */}
+      {/* =========== atau menggunakan dibawah jika tidak ada opsi pd ternary / end operation =========== */}
       {showArticle && <Article1 img={articleImg1} />}
       {showArticle && <Article2 img={articleImg2} />}
       <Horizontal imgs={[img1, img2, img3, img4, img1]} />
