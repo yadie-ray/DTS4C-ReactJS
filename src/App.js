@@ -1,4 +1,5 @@
 import "./App.scss";
+import { useState } from "react";
 
 import Banner from "./components/Banner";
 import Article1 from "./components/Article1";
@@ -15,10 +16,12 @@ import img3 from "./assets/img_6.jpg";
 import img4 from "./assets/img_7.jpg";
 
 const App = () => {
-  const showArticle = true;
+  // const showArticle = true;
+  const [showArticle, setShowArticle] = useState(true);
 
   const greeting = () => {
-    alert("email submitted");
+    // alert("email submitted");
+    setShowArticle(showArticle ? false : true);
   };
 
   return (
