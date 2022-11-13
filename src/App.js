@@ -30,7 +30,7 @@ const showArticleReducer = (state, action) => {
       return null;
   }
 };
-// ----- END useReducers -----
+// ----- END useReducer -----
 
 const App = () => {
   // const showArticle = true;
