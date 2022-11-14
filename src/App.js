@@ -16,21 +16,7 @@ import img1 from "./assets/img_4.jpg";
 import img2 from "./assets/img_5.jpg";
 import img3 from "./assets/img_6.jpg";
 import img4 from "./assets/img_7.jpg";
-
-// ----- useReducers -----
-const initialState = true;
-
-const showArticleReducer = (state, action) => {
-  switch (action.type) {
-    case "false":
-      return true;
-    case "true":
-      return false;
-    default:
-      return null;
-  }
-};
-// ----- END useReducer -----
+import { initialState, showArticleReducer } from "./store/reducers";
 
 const App = () => {
   // const showArticle = true;
@@ -69,7 +55,7 @@ const App = () => {
         {showArticle && <Article2 img={articleImg2} />} */}
 
         {/* jika menggunakan useReducer, maka showArticle diganti dengan state */}
-        {state && <Article1 img={articleImg1} />}
+        <Article1 img={articleImg1} state={state} />
         {state && <Article2 img={articleImg2} />}
         <Horizontal imgs={[img1, img2, img3, img4, img1]} />
         <Newsletter greetingFn={greeting} />
