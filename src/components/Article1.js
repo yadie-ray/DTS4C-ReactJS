@@ -4,7 +4,7 @@ import { initialState, showArticleReducer } from "../store/reducers";
 import { ThemeContext } from "../utils/contexts/theme-context";
 
 const Article1 = (props) => {
-  const theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext); // dark theme
   // console.log("Article1", theme);
 
   if (props.state) {

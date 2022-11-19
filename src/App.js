@@ -30,7 +30,7 @@ const App = () => {
 
   const greeting = () => {
     // alert("email submitted");
-    // setShowArticle(showArticle ? false : true); // untuk men-triger Article mucul atau tidaknya
+    // setShowArticle(showArticle ? false : true); // untuk men-triger Article muncul atau tidaknya
     // setThemeId(themeId === "light" ? "dark" : "light"); // untuk membuat tampilan dark dgn klik tombol
     dispatch({ type: `${state}` });
   };

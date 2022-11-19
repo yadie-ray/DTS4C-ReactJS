@@ -5,6 +5,7 @@ const Horizontal = (props) => {
   return (
     <div id="horizontal">
       {props.imgs.map((image, i) => {
+        console.log("images index", i);
         return (
           <div key={i} className="image-wrapper">
             <img src={image} className="image image-1" alt="" />
