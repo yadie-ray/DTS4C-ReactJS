@@ -38,9 +38,8 @@ const App = () => {
   useEffect(() => {
     //   console.log("showArticle has changed to", showArticle);
     // }, [showArticle]);
-
     // showArticle diganti dengan state
-    console.log("showArticle has changed to", state);
+    // console.log("showArticle has changed to", state);
   }, [state]);
 
   return (
